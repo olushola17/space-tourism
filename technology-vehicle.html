@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="hamburger.css">
+  <link rel="stylesheet" href="technology.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="header-bg">
+    <a href="index.html" class="header-left">
+      <img src="assets/shared/Subtract.png" alt="">
+    </a>
+    <hr class="header-divider">
+    <div class="header-right">
+      <div class="header-links" id="header-home"><a href="index.html" class="links" data-link-container="home"><span class="header-span">00</span>  Home</a></div>
+      <div class="header-links" id="header-destination"><a href="destination-moon.html" class="links" data-link-container="destination"><span class="header-span">01</span>  Destination</a></div>
+      <div class="header-links" id="header-crew"><a href="crew-commander.html" class="links" data-link-container="crew"><span class="header-span">02</span>  Crew</a></div>
+      <div class="header-links" id="header-tech"><a href="technology-vehicle.html" class="links" data-link-container="tech"><span class="header-span">03</span>  Technology</a></div>
+    </div>
+    <div class="hamburger-menu-container">
+      <img class="hamburger-menu" src="assets/shared/icon-hamburger.svg" alt="">
+    </div>
+  </div>
+
+  <div class="tech-heading-bg">
+    <div class="tech-heading-container">
+      <div class="tech-heading"><span class="tech-heading-span">03</span> Space launch 101</div>
+    </div>
+  </div>
+
+  <div class="tech-bg">
+    <div class="tech-container">
+      <div class="tech-left">
+        <div class="tech-buttons-container">
+          <a data-btn="tech-vehicle-btn" class="tech-buttons" href="#tech-vehicle">1</a>
+          <a data-btn="tech-spaceport-btn" class="tech-buttons" href="#tech-spaceport">2</a>
+          <a data-btn="tech-capsule-btn" class="tech-buttons" href="#tech-capsule">3</a>
+        </div>
+        <div id="tech-vehicle" class="tech-details">
+          <h1>The terminology...</h1>
+          <h1>Launch vehicle</h1>
+          <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+        <div id="tech-spaceport" class="tech-details">
+          <h1>The terminology...</h1>
+          <h1>Spaceport</h1>
+          <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+            by analogy to the seaport for ships or airport for aircraft. Based in the 
+            famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+            of the Earth’s rotation for launch.</p>
+        </div>
+        <div id="tech-capsule" class="tech-details">
+          <h1>The terminology...</h1>
+          <h1>Space capsule</h1>
+          <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+            capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+            you'll spend your time during the flight. It includes a space gym, cinema, 
+            and plenty of other activities to keep you entertained.</p>
+        </div>
+      </div>
+      <div class="tech-img-container">
+        <img data-img="vehicle" id="tech-vehicle-img" class="tech-img" src="assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+        <img data-img="spaceport" id="tech-spaceport-img" class="tech-img" src="assets/technology/image-spaceport-portrait.jpg" alt="">
+        <img data-img="capsule" id="tech-capsule-img" class="tech-img" src="assets/technology/image-space-capsule-portrait.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  
+  <script src="technology.js"></script>
+  <script src="hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1440px;
+    height: 1024px;
+    margin: 80px auto 0px auto;
+}
+
+.crew-bg {
+    width: 100%;
+    max-width: 1440px;
+    height: 88px;
+    padding: 48px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.crew-container {
+    width: 100%;
+    max-width: 1110px;
+    height: 792px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.crew-left {
+    width: 539px;
+    height: 631px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.crew-heading {
+    font-size: 1.75rem;
+    font-family: Barlow;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.crew-heading-span {
+    font-weight: 600;
+    color: rgba(100, 100, 100, 70%);
+}
+
+.crew-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.crew-details h1:nth-child(1) {
+    font-family: Bellefair;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 50%);
+    margin-bottom: 10px;
+}
+
+.crew-details h1:nth-child(2) {
+    font-family: Bellefair;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 100%);
+}
+
+.crew-details p {
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+#crew-specialist, #crew-pilot, #crew-engineer {
+    display: none;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 540px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.carousel {
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: #cdc8c8;
+    cursor: pointer;
+}
+
+.carousel.active {
+    background-color: #ffffff;
+}
+
+.crew-right {
+    width: 539px;
+    height: 734px;
+}
+
+.crew-img {
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    /* display: none; */
+}
+
+#mark, #victor, #ansari {
+    display: none;
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+    body {
+        width: 100%;
+        max-width: 768px;
+        height: auto;
+        background-image: url(assets/crew/background-crew-tablet.jpg);
+        margin-top: 0px;
+        padding: 0px 10px;
+    }
+
+    .crew-bg {
+        width: 100%;
+        max-width: 768px;
+        height: 928px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .crew-container {
+        width: 100%;
+        max-width: 688px;
+        height: 848px;
+        flex-direction: column;
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+
+    .crew-left {
+        width: 100%;
+        max-width: 688px;
+        height: 848px;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .crew-heading {
+        width: 100%;
+        max-width: 688px;
+        height: 24px;
+        font-size: 1.25rem;
+        /* padding-bottom: 40px; */
+    }
+
+    .crew-details {
+        width: 512px;
+        height: 231px;
+        align-items: center;
+        text-align: center;
+        /* margin-bottom: 40px; */
+    }
+
+    .crew-details h1:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .crew-details h1:nth-child(2) {
+        font-size: 2.5rem;
+    }
+
+    .carousel-container {
+        width: 512px;
+        justify-content: center;
+    }
+
+    .crew-right {
+        width: 688;
+        height: 463px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .crew-img {
+        width: 60%;
+        height: auto;
+        mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 100%;
+        max-width: 375px;
+        height: auto;
+        background-image: url(assets/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 0px;
+        padding: 0px 10px;
+    }
+
+    .crew-bg {
+        width: 100%;
+        max-width: 375px;
+        height: 880px;
+    }
+
+    .crew-container {
+        width: 100%;
+        max-width: 375px;
+        height: 792px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crew-left {
+        width: 100%;
+        max-width: 327px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crew-heading {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .crew-details {
+        width: 327px;
+        height: 245px;
+        align-items: center;
+    }
+
+    .crew-details h1:nth-child(1) {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .crew-details h1:nth-child(2) {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .crew-details p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .carousel-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .carousel {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+    }
+
+    .crew-right {
+        width: 271px;
+        height: 340px;
+    }
+}
